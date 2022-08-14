@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:my_wallet/controller/chart_provider.dart';
-import 'package:my_wallet/controller/transaction_list_provider.dart';
+import 'package:my_wallet/controller/providers/chart_provider.dart';
+import 'package:my_wallet/controller/providers/transaction_list_provider.dart';
 import 'package:my_wallet/view/screens/charts/functions/chart_data.dart';
 import 'package:my_wallet/view/screens/charts/widgets/income_expense.dart';
 import 'package:my_wallet/view/screens/charts/widgets/no_data.dart';
@@ -42,6 +42,7 @@ class ExpenseChart extends StatelessWidget {
             ChartData.chartLogic(lastMonthExpenseList);
         final List<ChartData> hundredDaysExpenseTransactionList =
             ChartData.chartLogic(hundredDaysExpenseList);
+        // chart in ui    
         return Expanded(
           child: Provider.of<ChartProvider>(context).expenseChartCategoryType ==
                   'All'

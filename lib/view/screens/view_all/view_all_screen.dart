@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:my_wallet/controller/transaction_list_provider.dart';
+import 'package:my_wallet/controller/providers/transaction_list_provider.dart';
 import 'package:my_wallet/view/core/colors.dart';
 import 'package:my_wallet/view/screens/view_all/widgets/sorting_button.dart';
 import 'package:my_wallet/view/screens/view_all/widgets/text_widget.dart';

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:my_wallet/controller/chart_provider.dart';
-import 'package:my_wallet/controller/transaction_list_provider.dart';
+import 'package:my_wallet/controller/providers/chart_provider.dart';
+import 'package:my_wallet/controller/providers/transaction_list_provider.dart';
 import 'package:my_wallet/view/screens/charts/functions/chart_data.dart';
 import 'package:my_wallet/view/screens/charts/widgets/income_expense.dart';
 import 'package:my_wallet/view/screens/charts/widgets/no_data.dart';
@@ -23,6 +23,7 @@ class IncomeChart extends StatelessWidget {
       ),
       Consumer<TransactionListProvider>(
           builder: (context, transactionData, Widget? _) {
+        // income lists    
         final incomeList = transactionData.transactionList
             .where((element) => element.incomeOrExpense == 'Income')
             .toList();
@@ -34,12 +35,14 @@ class IncomeChart extends StatelessWidget {
             .where((element) => element.selectedDate
                 .isAfter(DateTime.now().subtract(const Duration(days: 101))))
             .toList();
+        // income lists chart data    
         final List<ChartData> incomeTransactionList =
             ChartData.chartLogic(incomeList);
         final List<ChartData> lastMonthIncomeTransactionList =
             ChartData.chartLogic(lastMonthIncomeList);
         final List<ChartData> hundredDaysIncomeTransactionList =
             ChartData.chartLogic(hundredDaysIncomeList);
+        // chart in ui    
         return Expanded(
           child: Provider.of<ChartProvider>(context).incomeChartCategoryType ==
                   'All'

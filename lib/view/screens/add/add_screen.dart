@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
-import 'package:my_wallet/controller/add_provider.dart';
+import 'package:my_wallet/controller/providers/add_provider.dart';
 import 'package:my_wallet/view/core/category_list.dart';
 import 'package:my_wallet/view/core/colors.dart';
 import 'package:my_wallet/view/widgets/image_widget.dart';

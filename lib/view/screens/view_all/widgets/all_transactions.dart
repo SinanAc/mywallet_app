@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:my_wallet/controller/transaction_list_provider.dart';
+import 'package:my_wallet/controller/providers/transaction_list_provider.dart';
 import 'package:my_wallet/view/core/functions.dart';
 import 'package:my_wallet/view/screens/search/search_screen.dart';
 import 'package:my_wallet/view/widgets/all_transactions.dart';

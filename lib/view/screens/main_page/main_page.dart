@@ -1,8 +1,8 @@
 import 'package:animated_bottom_navigation_bar/animated_bottom_navigation_bar.dart';
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
-import 'package:my_wallet/controller/add_provider.dart';
-import 'package:my_wallet/controller/main_page_provider.dart';
+import 'package:my_wallet/controller/providers/add_provider.dart';
+import 'package:my_wallet/controller/providers/main_page_provider.dart';
 import 'package:my_wallet/view/core/colors.dart';
 import 'package:my_wallet/view/core/functions.dart';
 import 'package:my_wallet/view/screens/add/add_screen.dart';

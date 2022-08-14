@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:my_wallet/controller/chart_provider.dart';
-import 'package:my_wallet/controller/transaction_list_provider.dart';
+import 'package:my_wallet/controller/providers/chart_provider.dart';
+import 'package:my_wallet/controller/providers/transaction_list_provider.dart';
 import 'package:my_wallet/view/screens/charts/functions/all_chart_data.dart';
 import 'package:my_wallet/view/screens/charts/widgets/all_data.dart';
 import 'package:my_wallet/view/screens/charts/widgets/no_data.dart';

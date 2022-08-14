@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:my_wallet/controller/main_page_provider.dart';
+import 'package:my_wallet/controller/providers/main_page_provider.dart';
 import 'package:my_wallet/view/core/colors.dart';
 import 'package:my_wallet/view/core/functions.dart';
 import 'package:my_wallet/view/screens/main_page/main_page.dart';

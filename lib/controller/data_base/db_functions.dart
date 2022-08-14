@@ -1,21 +1,15 @@
 import 'package:hive_flutter/hive_flutter.dart';
-import 'package:my_wallet/controller/transaction_list_provider.dart';
+import 'package:my_wallet/controller/data_base/db_abstract.dart';
+import 'package:my_wallet/controller/providers/transaction_list_provider.dart';
 import 'package:my_wallet/models/transaction_model.dart';
 import 'package:my_wallet/view/core/functions.dart';
 import 'package:my_wallet/view/screens/splash/splash_screen.dart';
 import 'package:provider/provider.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
-const transactionDbName = 'transaction_db';
-
-abstract class TransactionDbFunctions {
-  Future<void> addTransaction(TransactionModel value, context);
-  Future<void> updateTransaction({required data, required id});
-  Future<List<TransactionModel>> getAllTransaction();
-  Future<void> deleteTransaction(String id, context);
-}
 
 class TransactionDB implements TransactionDbFunctions {
+  final String transactionDbName = 'transaction_db';
   TransactionDB._internal();
   static TransactionDB instance = TransactionDB._internal();
   factory TransactionDB() {

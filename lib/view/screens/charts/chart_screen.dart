@@ -1,7 +1,6 @@
-// ignore_for_file: prefer_const_literals_to_create_immutables
 import 'package:flutter/material.dart';
-import 'package:my_wallet/controller/chart_provider.dart';
-import 'package:my_wallet/controller/transaction_list_provider.dart';
+import 'package:my_wallet/controller/providers/chart_provider.dart';
+import 'package:my_wallet/controller/providers/transaction_list_provider.dart';
 import 'package:my_wallet/view/core/colors.dart';
 import 'package:my_wallet/view/screens/charts/tab_screens/all_chart.dart';
 import 'package:my_wallet/view/screens/charts/tab_screens/expense_chart.dart';
@@ -51,10 +50,10 @@ class ChartScreen extends StatelessWidget {
                     TabBar(
                       unselectedLabelColor: kIndigoAccentColor,
                       indicatorSize: TabBarIndicatorSize.label,
-                      tabs: [
-                        const TabWidget(text: 'All'),
-                        const TabWidget(text: 'Income'),
-                        const TabWidget(text: 'Expense'),
+                      tabs: const[
+                        TabWidget(text: 'All'),
+                        TabWidget(text: 'Income'),
+                        TabWidget(text: 'Expense'),
                       ],
                       indicator: BoxDecoration(
                           borderRadius: BorderRadius.circular(20),

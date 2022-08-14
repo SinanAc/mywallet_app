@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:my_wallet/controller/home_provider.dart';
-import 'package:my_wallet/controller/transaction_list_provider.dart';
+import 'package:my_wallet/controller/providers/home_provider.dart';
+import 'package:my_wallet/controller/providers/transaction_list_provider.dart';
 import 'package:my_wallet/view/core/colors.dart';
 import 'package:my_wallet/view/screens/view_all/widgets/text_widget.dart';
 import 'package:my_wallet/view/widgets/all_transactions.dart';
