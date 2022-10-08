@@ -136,7 +136,7 @@ class EditScreen extends StatelessWidget {
                     editProvider.updateSubmission(context, data.id!, data);
                   },
                   style: ElevatedButton.styleFrom(
-                    primary: kIndigoColor,
+                    backgroundColor: kIndigoColor,
                   ),
                   child: const Padding(
                       padding: EdgeInsets.all(10.0),

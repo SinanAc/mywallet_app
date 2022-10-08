@@ -153,7 +153,7 @@ class AddScreen extends StatelessWidget {
                       addProvider.submission(context);
                     },
                     style: ElevatedButton.styleFrom(
-                      primary: kIndigoColor,
+                      backgroundColor: kIndigoColor,
                     ),
                     child: const Padding(
                       padding: EdgeInsets.all(10.0),
